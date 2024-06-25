@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuj Tyagi</title>
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background-color: white;
+    }
+  </style>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <!-- <img src="./assets/images/avatar-1.png" alt="Anuj Tyagi" width="80"> -->
+            <img
+              src="./assets/images/Anuj_Tyagi.png"
+              alt="Anuj Tyagi"
+              width="80"
+              style="border-radius: 20px"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Anuj Tyagi">Anuj Tyagi</h1>
+
+            <p class="title">Lead SRE</p>
+            <p class="title">Cloud, AI, Automation, Observability</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:anujtyagi.inbox@gmail.com" class="contact-link"
+                  >anujtyagi.inbox@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Maryland, USA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/anujtyagi1/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Experience</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am working as Lead SRE. I have strong experience of modernizing enterprise infrastructure 
+              with AWS services, migration of applications to Serverless, MicroServices, Scaling, 
+              performance improvement, Disaster recovery solutions, mlOps deployment, Cost optimization, 
+              improved strategy to deploy release and do infrastructure deployment. 
+
+              In addition, I am also working as a Technical reviewer of AWS Data Engineering book.
+
+            </p>
+
+            <p>
+              I enjoy building new tech solutions from scratch and solving everyday 
+              problems with technology. 
+            </p>
+
+            <p>
+              Interesting fact -
+              <br />
+              <br />
+              Certifications:
+              Linux Foundation - Certified Kubernetes Administrator
+              Amazon AWS Solution Architect Associate
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <!-- <h3 class="h3 service-title">What I'm Doing</h3> -->
+
+            <!-- <ul class="service-list">
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full Stack Development</h4>
+
+                <p class="service-item-text">
+                    Developing intuitive web applications, from frontend to backend, using a diverse array of technologies.
+                </p>
+            </div>
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Database management icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Database Management</h4>
+
+                <p class="service-item-text">
+                    Expertise in MongoDB, MySQL, Oracle, PostgreSQL, and more, ensuring optimal data storage and retrieval.
+                </p>
+            </div>
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="mobile app icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Solutions</h4>
+
+                <p class="service-item-text">
+                    Implementing cloud-native applications using AWS services, optimizing for scalability and cost-effectiveness.
+                </p>
+            </div>
+
+        </li>
+
+        <li class="service-item">
+
+            <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Quality assurance icon" width="40">
+            </div>
+
+            <div class="service-content-box">
+                <h4 class="h4 service-item-title">Code Quality & Testing</h4>
+
+                <p class="service-item-text">
+                    Ensuring code quality with tools like ESLint, SonarLint, and JUnit. Delivering reliable and maintainable software solutions.
+                </p>
+            </div>
+
+        </li>
+
+    </ul> -->
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="experience" data-page="experience">
+          <header>
+            <h2 class="h2 article-title">Experience</h2>
+            <!-- <a
+              href="https://drive.google.com/file/d/1c8tjYtUB9PLtyarWqw7y-RP0mqJG9UCQ/view?usp=sharing"
+              style="
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-right: 10px;
+              "
+              >Resume</a
+            > -->
+          </header>
+          <br />
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Northeastern University</h4>
+
+                <span>Sept 2015 — Aug 2017</span>
+
+                <p class="timeline-text">
+                  Master of Science (Major in Computer Networks)
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Maharishi Dayanand University</h4>
+
+                <span>Jun 2008 — Jul 2012</span>
+
+                <p class="timeline-text">
+                  Bachelor of Engineering (Major in Information Technology)
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">RingCentral Inc</h4>
+                <span>Aug 2022 - Present</span>
+                <p class="timeline-text">
+                  ● Led SRE projects to migrate to applications, scale, optimized performance and costs, 
+                  and ensure fault tolerance, disaster recovery & reliability.<br /><br />
+                  ● Created CI/CD pipelines using GitLab CI for product releases, self-service 
+                  infrastructure updates, and ML model deployments.<br /><br />
+                  ● Implemented Observervability for product and infrastructure
+                  ● Created and utilized Terraform modules to automate infrastructure deployment
+                  ● Contributed to open source projects to fix or patch bugs internally
+                  ● Provided training to SREs, developers, and QA on Kubernetes and infrastructure; 
+                  ● Interviewed new hires and facilitated knowledge sharing
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">EhealthInsurance Inc</h4>
+                <span>Aug 2020 - Aug 2022</span>
+                <p class="timeline-text">
+                  ● Created web applications integrating payment gateways for 5+
+                  clients with React and Spring Boot to support bank
+                  transfers.<br /><br />
+                  ● Introduced contactless transactions by supporting payment QR
+                  codes using Razorpay API resulting in an 80% adoption rate.<br /><br />
+                  ● Ensured reliability by limiting the transactions per second
+                  (TPS) to 10 by implementing a FIFO queue for in-store
+                  payments.
+                </p>
+              </li>
+
+            </ol>
+          </section>
+
+          <!-- <section class="skill">
+        
+          <h3 class="h3 skills-title">My skills</h3>
+        
+          <ul class="skills-list content-card">
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java Development</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python Scripting</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Database Management</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+        
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development (HTML, CSS, JS)</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+        
+          </ul>
+        
+        </section> -->
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="projects" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects and Publications</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list"></ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+ 
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
